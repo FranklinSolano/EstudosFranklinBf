@@ -1,24 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DesefioTextFieldDelegate01" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu endereço" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qy1-GC-6KR">
+                                <rect key="frame" x="20" y="96" width="350" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu nome:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vr2-4z-WfC">
+                                <rect key="frame" x="20" y="47" width="350" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2J6-zp-5aK">
+                                <rect key="frame" x="20" y="145" width="350" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1vh-Be-ets">
+                                <rect key="frame" x="157.66666666666666" y="219" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="tappedCadastroButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wpa-8R-1gI"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qy1-GC-6KR" secondAttribute="trailing" constant="20" id="22m-9H-ODv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2J6-zp-5aK" secondAttribute="trailing" constant="20" id="3Fu-lM-8XA"/>
+                            <constraint firstItem="1vh-Be-ets" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GYs-NU-vYK"/>
+                            <constraint firstItem="vr2-4z-WfC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Hyw-Kw-lf5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vr2-4z-WfC" secondAttribute="trailing" constant="20" id="O6g-R0-urU"/>
+                            <constraint firstItem="2J6-zp-5aK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ru5-tC-aQy"/>
+                            <constraint firstItem="qy1-GC-6KR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VXx-fc-XQF"/>
+                            <constraint firstItem="2J6-zp-5aK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WWW-T6-9sa"/>
+                            <constraint firstItem="2J6-zp-5aK" firstAttribute="top" secondItem="qy1-GC-6KR" secondAttribute="bottom" constant="15" id="YsB-be-TWc"/>
+                            <constraint firstItem="qy1-GC-6KR" firstAttribute="top" secondItem="vr2-4z-WfC" secondAttribute="bottom" constant="15" id="dbt-ld-Ra6"/>
+                            <constraint firstItem="1vh-Be-ets" firstAttribute="top" secondItem="2J6-zp-5aK" secondAttribute="bottom" constant="40" id="hA7-I9-Hef"/>
+                            <constraint firstItem="vr2-4z-WfC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jIH-KU-vfv"/>
+                            <constraint firstItem="qy1-GC-6KR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rFo-Up-j8I"/>
+                            <constraint firstItem="vr2-4z-WfC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xrt-4H-r2K"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cadastroButton" destination="1vh-Be-ets" id="l0R-yF-j9o"/>
+                        <outlet property="endereçoTextField" destination="qy1-GC-6KR" id="a8f-LZ-h58"/>
+                        <outlet property="nameTextField" destination="vr2-4z-WfC" id="eIy-Dc-pgn"/>
+                        <outlet property="senhaTextField" destination="2J6-zp-5aK" id="dLa-o5-F4n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="132" y="-34"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
