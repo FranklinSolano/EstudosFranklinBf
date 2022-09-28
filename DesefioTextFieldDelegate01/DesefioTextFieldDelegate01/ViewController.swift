@@ -48,6 +48,7 @@ class ViewController: UIViewController {
         cadastroButton.backgroundColor = .systemBlue
         cadastroButton.setTitleColor(.white, for: .normal)
         cadastroButton.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .bold)
+        cadastroButton.isEnabled = false
         
         
         
@@ -72,9 +73,16 @@ extension ViewController: UITextFieldDelegate {
                 textField.layer.borderColor = UIColor.red.cgColor
         }
         
+        if nameTextField.text == "" || endereçoTextField.text == "" || senhaTextField.text == ""{
+            cadastroButton.isEnabled = false
+        }else{
+            cadastroButton.isEnabled = true
+        }
+        
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("Cadastro realizado com Sucesso!")
         textField.resignFirstResponder()
         
         return true
