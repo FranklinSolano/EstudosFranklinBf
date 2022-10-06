@@ -11,14 +11,22 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var mudarTela: UIButton!
     
+    func  configElementos(){
+        mudarTela.setTitle("GoTela2", for: .normal)
+        mudarTela.backgroundColor = .darkGray
+        mudarTela.clipsToBounds = true
+        mudarTela.layer.cornerRadius = 10
+        mudarTela.setTitleColor(.green, for: .normal)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+       configElementos()
     }
 
 
     @IBAction func goTela2(_ sender: UIButton) {
-        performSegue(withIdentifier: "goTela2", sender: nil)
+        
     }
 }
 
