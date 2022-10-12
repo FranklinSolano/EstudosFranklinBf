@@ -11,30 +11,45 @@ class ViewController: UIViewController {
 
 
     
-    @IBOutlet weak var tela02Button: UIButton!
+    
     
   
     @IBOutlet weak var tela03Button: UIButton!
     
+    
+    @IBOutlet weak var textFieldName: UITextField!
+    
+    @IBOutlet weak var textFieldSobrenome: UITextField!
+    
+    var name:String = ""
+    var sobrenome:String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         configElementos()
         view.backgroundColor = .darkGray
+        textFieldName.text = name
+        textFieldSobrenome.text = sobrenome
  
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        print(#function)
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        print(#function)
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        print(#function)
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        print(#function)
     }
     
     func configElementos(){
-        tela02Button.setTitle("GoTela02", for: .normal)
-        tela02Button.setTitleColor(.green, for: .normal)
-        tela02Button.backgroundColor = .darkGray
-        tela02Button.clipsToBounds = true
-        tela02Button.layer.cornerRadius = 10
-        tela02Button.layer.borderColor = UIColor.green.cgColor
-        tela02Button.layer.borderWidth = 2
         
     //------
         
-        tela03Button.setTitle("GoTela03", for: .normal)
+        tela03Button.setTitle("GoTela02", for: .normal)
         tela03Button.setTitleColor(.purple, for: .normal)
         tela03Button.backgroundColor = .darkGray
         tela03Button.clipsToBounds = true
@@ -44,17 +59,25 @@ class ViewController: UIViewController {
     }
 
 
-    @IBAction func TappedButton(_ sender: UIButton) {
-        let vc:Tela02VC? = UIStoryboard(name: "Tela02VC", bundle: nil).instantiateViewController(withIdentifier: "Tela02VC") as? Tela02VC
-        present(vc ?? UIViewController(), animated: true)
-        
-    }
+    
     
    
     @IBAction func TappedButtonTela03(_ sender: UIButton) {
         let vc:Tela03VC? = UIStoryboard(name: "Tela03VC", bundle: nil).instantiateViewController(withIdentifier: "Tela03VC") as? Tela03VC
         
+        let fullName = ("\(textFieldName.text ?? "")  \(textFieldSobrenome.text ?? "")")
+        vc?.name = fullName
+       
+        
+        
+        
+        
         navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
+        
+        
+        
+        
+        
     }
     
 }

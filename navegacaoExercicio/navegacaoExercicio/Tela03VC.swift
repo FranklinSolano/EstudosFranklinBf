@@ -10,25 +10,18 @@ import UIKit
 class Tela03VC: UIViewController {
     
     
-    @IBOutlet weak var backFrontLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     
+    var name: String = ""
+    var sobrenome:String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .darkGray
-        confingElemento()
-    }
-    
-    func confingElemento(){
+        nameLabel.text = name
         
-        backFrontLabel.text = "Back Front Academy"
-        backFrontLabel.font = UIFont.boldSystemFont(ofSize: 20)
-        backFrontLabel.textColor = .purple
-        backFrontLabel.layer.borderWidth = 1
-        backFrontLabel.layer.borderColor = UIColor.purple.cgColor
-        backFrontLabel.clipsToBounds = true
-        backFrontLabel.layer.cornerRadius = 10
     }
     
+ 
 
 
 

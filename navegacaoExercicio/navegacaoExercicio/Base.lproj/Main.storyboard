@@ -15,14 +15,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Er-kJ-Olr">
-                                <rect key="frame" x="20" y="111" width="350" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="TappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LbD-Ru-iMu"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dic-2n-sF8">
                                 <rect key="frame" x="20" y="755" width="350" height="35"/>
                                 <state key="normal" title="Button"/>
@@ -31,24 +23,55 @@
                                     <action selector="TappedButtonTela03:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i7C-df-RHS"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite seu Nome:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edx-o2-Ua4">
+                                <rect key="frame" x="12" y="111" width="131" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite seu Sobrenome:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SH1-tH-QKZ">
+                                <rect key="frame" x="12" y="186" width="366" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ocM-Cy-uJk">
+                                <rect key="frame" x="12" y="142" width="366" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tcb-qz-cpD">
+                                <rect key="frame" x="12" y="217" width="366" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="1Er-kJ-Olr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5GQ-qh-k82"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Er-kJ-Olr" secondAttribute="trailing" constant="20" id="IlM-la-bPv"/>
+                            <constraint firstItem="edx-o2-Ua4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="0fp-Hj-QhQ"/>
+                            <constraint firstItem="SH1-tH-QKZ" firstAttribute="top" secondItem="ocM-Cy-uJk" secondAttribute="bottom" constant="10" id="8OK-Gb-0j6"/>
+                            <constraint firstItem="SH1-tH-QKZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="9CO-nc-Sav"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dic-2n-sF8" secondAttribute="trailing" constant="20" id="Ixv-9Y-wb1"/>
+                            <constraint firstItem="tcb-qz-cpD" firstAttribute="top" secondItem="SH1-tH-QKZ" secondAttribute="bottom" constant="10" id="QeS-pf-IiC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Dic-2n-sF8" secondAttribute="bottom" constant="20" id="XcH-uE-nK4"/>
-                            <constraint firstItem="1Er-kJ-Olr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="evh-8R-omR"/>
+                            <constraint firstItem="edx-o2-Ua4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Xsu-2x-ulH"/>
+                            <constraint firstItem="ocM-Cy-uJk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="cig-na-rv4"/>
+                            <constraint firstItem="tcb-qz-cpD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="fRv-Tm-mWX"/>
+                            <constraint firstItem="ocM-Cy-uJk" firstAttribute="top" secondItem="edx-o2-Ua4" secondAttribute="bottom" constant="10" id="iXs-It-G1g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SH1-tH-QKZ" secondAttribute="trailing" constant="12" id="jUp-B9-DpR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ocM-Cy-uJk" secondAttribute="trailing" constant="12" id="kBL-UT-PL5"/>
                             <constraint firstItem="Dic-2n-sF8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tAt-Mn-9FV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tcb-qz-cpD" secondAttribute="trailing" constant="12" id="wpk-9v-cEX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HZo-gx-rdH">
                         <barButtonItem key="backBarButtonItem" title="voltar" id="Zt9-Ya-w5k"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="tela02Button" destination="1Er-kJ-Olr" id="2dg-eQ-hnk"/>
                         <outlet property="tela03Button" destination="Dic-2n-sF8" id="q9T-6c-LlR"/>
+                        <outlet property="textFieldName" destination="ocM-Cy-uJk" id="HLJ-dO-Xu7"/>
+                        <outlet property="textFieldSobrenome" destination="tcb-qz-cpD" id="3Hk-zS-lsG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
