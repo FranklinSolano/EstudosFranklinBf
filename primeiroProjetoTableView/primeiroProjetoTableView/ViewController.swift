@@ -52,5 +52,7 @@ extension ViewController:UITableViewDelegate, UITableViewDataSource {
         return cell ?? UITableViewCell()
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        <#code#>
+    }
 }
