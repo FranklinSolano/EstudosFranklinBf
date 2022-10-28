@@ -47,6 +47,15 @@ extension ViewController:UITableViewDelegate, UITableViewDataSource {
         80
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+   
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        Marca.remove(at: indexPath.row)
+        tableView.reloadData()
+    }
+    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("O carro selecionado foi: \(Marca[indexPath.row].name)")
