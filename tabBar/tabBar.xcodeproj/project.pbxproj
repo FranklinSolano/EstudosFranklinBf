@@ -19,6 +19,7 @@
 		EB759E07291DD42600F4D6C9 /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB759E06291DD42600F4D6C9 /* Perfil.swift */; };
 		EB759E0B291DD4C300F4D6C9 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB759E09291DD4C300F4D6C9 /* CustomTableViewCell.swift */; };
 		EB759E0C291DD4C300F4D6C9 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB759E0A291DD4C300F4D6C9 /* CustomTableViewCell.xib */; };
+		EB759E722926FAC700F4D6C9 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB759E712926FAC700F4D6C9 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		EB759E06291DD42600F4D6C9 /* Perfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perfil.swift; sourceTree = "<group>"; };
 		EB759E09291DD4C300F4D6C9 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		EB759E0A291DD4C300F4D6C9 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		EB759E712926FAC700F4D6C9 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		EB759DE8291DBD7C00F4D6C9 /* tabbar */ = {
 			isa = PBXGroup;
 			children = (
+				EB759E702926FA8800F4D6C9 /* Alert */,
 				EB759E08291DD49F00F4D6C9 /* Cell */,
 				EB759E05291DD40500F4D6C9 /* Model */,
 				EB759DE9291DBD7C00F4D6C9 /* AppDelegate.swift */,
@@ -99,6 +102,14 @@
 				EB759E0A291DD4C300F4D6C9 /* CustomTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		EB759E702926FA8800F4D6C9 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				EB759E712926FAC700F4D6C9 /* Alert.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB759E722926FAC700F4D6C9 /* Alert.swift in Sources */,
 				EB759E00291DC13A00F4D6C9 /* Tela02ViewController.swift in Sources */,
 				EB759E07291DD42600F4D6C9 /* Perfil.swift in Sources */,
 				EB759E0B291DD4C300F4D6C9 /* CustomTableViewCell.swift in Sources */,

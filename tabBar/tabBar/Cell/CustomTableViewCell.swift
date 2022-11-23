@@ -21,7 +21,7 @@ class CustomTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+//        imagePerfil.tintColor = .black
     }
 
     func setupCell(perfil:Perfil){
