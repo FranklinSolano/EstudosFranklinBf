@@ -27,8 +27,6 @@ class Tela02VC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configElements()
-
-        
     }
     
     func configElements(){
@@ -39,14 +37,14 @@ class Tela02VC: UIViewController {
     
     
     @IBAction func tappedMacbookButton(_ sender: UIButton) {
-//        NotificationCenter.default.post(name: .macbook, object: nil)
+        //        NotificationCenter.default.post(name: .macbook, object: nil)
         delegate?.tappedMacbook()
         dismiss(animated: true)
     }
     
     
     @IBAction func tappedImacButton(_ sender: UIButton) {
-//        NotificationCenter.default.post(name: .imac, object: nil)
+        //        NotificationCenter.default.post(name: .imac, object: nil)
         delegate?.tappedImac()
         dismiss(animated: true)
     }

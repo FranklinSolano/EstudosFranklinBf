@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmptyTableViewCell" rowHeight="243" id="KGk-i7-Jjw" customClass="EmptyTableViewCell" customModule="DesafioRoleta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="243"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="243"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aga-V2-AdT">
+                        <rect key="frame" x="36" y="183" width="248" height="20.333333333333343"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qIM-6c-rzt">
+                        <rect key="frame" x="62" y="10" width="196" height="153"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="153" id="rbc-21-Eh7"/>
+                            <constraint firstAttribute="width" constant="196" id="zVe-sh-5JR"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" systemColor="linkColor"/>
+                <constraints>
+                    <constraint firstItem="qIM-6c-rzt" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="6Qd-No-Kgd"/>
+                    <constraint firstItem="aga-V2-AdT" firstAttribute="top" secondItem="qIM-6c-rzt" secondAttribute="bottom" constant="20" id="7ff-49-V0O"/>
+                    <constraint firstItem="qIM-6c-rzt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="FcI-CN-j4i"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="aga-V2-AdT" secondAttribute="trailing" constant="20" id="Jz6-DG-NkY"/>
+                    <constraint firstItem="aga-V2-AdT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="xwn-Hd-hKA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageCell" destination="qIM-6c-rzt" id="39C-Y7-YeF"/>
+                <outlet property="informacaoLabel" destination="aga-V2-AdT" id="kh5-s6-LRa"/>
+            </connections>
+            <point key="canvasLocation" x="129.7709923664122" y="58.802816901408455"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
