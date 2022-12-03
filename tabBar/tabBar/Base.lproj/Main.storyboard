@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZGl-GT-FvY">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tela02-->
+        <scene sceneID="BVo-Tj-auZ">
+            <objects>
+                <viewController id="hAP-Wn-PLf" customClass="Tela02ViewController" customModule="tabbar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1bM-EN-DC4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="aQn-dR-H7D"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tela02" image="doc.fill" catalog="system" id="dSv-wQ-WEm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L1W-A7-wfm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1567" y="448"/>
+        </scene>
+        <!--Tela01-->
+        <scene sceneID="fDn-Ie-XGJ">
+            <objects>
+                <viewController id="YXr-2z-zOY" customClass="Tela01ViewController" customModule="tabbar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nqk-JG-jmD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Nlb-PT-TZR">
+                                <rect key="frame" x="0.0" y="369" width="393" height="400"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="q4v-Is-W9g"/>
+                                </constraints>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="95f-xF-wWS">
+                                <rect key="frame" x="146.66666666666666" y="59" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Ct0-m6-i46"/>
+                                    <constraint firstAttribute="height" constant="100" id="NsI-s6-NQz"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDx-Yn-pT9">
+                                <rect key="frame" x="159" y="179" width="75" height="35"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2lt-aj-EjG">
+                                <rect key="frame" x="17" y="270" width="359" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMR-ym-8xT">
+                                <rect key="frame" x="159" y="319" width="75" height="35"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="tappedButtonAdicionar:" destination="YXr-2z-zOY" eventType="touchUpInside" id="90x-xW-VwV"/>
+                                    <action selector="tappedEditarFoto:" destination="YXr-2z-zOY" eventType="touchUpInside" id="lxB-Wp-hef"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdl-mF-ndd">
+                                <rect key="frame" x="10" y="239" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XBm-Xv-LEg"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                        <constraints>
+                            <constraint firstItem="XBm-Xv-LEg" firstAttribute="bottom" secondItem="Nlb-PT-TZR" secondAttribute="bottom" id="50n-ox-y51"/>
+                            <constraint firstItem="JMR-ym-8xT" firstAttribute="centerX" secondItem="Nqk-JG-jmD" secondAttribute="centerX" id="B4R-T0-O3i"/>
+                            <constraint firstItem="JMR-ym-8xT" firstAttribute="top" secondItem="2lt-aj-EjG" secondAttribute="bottom" constant="15" id="Cbf-08-fvp"/>
+                            <constraint firstItem="2lt-aj-EjG" firstAttribute="top" secondItem="Kdl-mF-ndd" secondAttribute="bottom" constant="10" id="JK1-gt-8Xd"/>
+                            <constraint firstItem="Nlb-PT-TZR" firstAttribute="leading" secondItem="XBm-Xv-LEg" secondAttribute="leading" id="Pr7-LP-Gg9"/>
+                            <constraint firstItem="sDx-Yn-pT9" firstAttribute="top" secondItem="95f-xF-wWS" secondAttribute="bottom" constant="20" id="U5e-Bo-5Ra"/>
+                            <constraint firstItem="XBm-Xv-LEg" firstAttribute="trailing" secondItem="Nlb-PT-TZR" secondAttribute="trailing" id="WfB-2b-1nS"/>
+                            <constraint firstItem="95f-xF-wWS" firstAttribute="centerX" secondItem="Nqk-JG-jmD" secondAttribute="centerX" id="ZjA-RP-jc0"/>
+                            <constraint firstItem="2lt-aj-EjG" firstAttribute="leading" secondItem="XBm-Xv-LEg" secondAttribute="leading" constant="17" id="bp8-yR-OxS"/>
+                            <constraint firstItem="XBm-Xv-LEg" firstAttribute="trailing" secondItem="2lt-aj-EjG" secondAttribute="trailing" constant="17" id="dIN-Yl-dZ7"/>
+                            <constraint firstItem="sDx-Yn-pT9" firstAttribute="centerX" secondItem="Nqk-JG-jmD" secondAttribute="centerX" id="gT8-zm-iji"/>
+                            <constraint firstItem="Kdl-mF-ndd" firstAttribute="leading" secondItem="XBm-Xv-LEg" secondAttribute="leading" constant="10" id="k4B-MB-aBY"/>
+                            <constraint firstItem="Kdl-mF-ndd" firstAttribute="top" secondItem="sDx-Yn-pT9" secondAttribute="bottom" constant="25" id="kgD-cm-WrV"/>
+                            <constraint firstItem="95f-xF-wWS" firstAttribute="top" secondItem="XBm-Xv-LEg" secondAttribute="top" id="xun-MX-wFM"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tela01" image="paperplane.fill" catalog="system" id="JB9-DL-zNK">
+                        <color key="badgeColor" systemColor="labelColor"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="adicionarButton" destination="JMR-ym-8xT" id="gUg-2B-oH6"/>
+                        <outlet property="editarButton" destination="sDx-Yn-pT9" id="bUU-mr-zZM"/>
+                        <outlet property="imageView" destination="95f-xF-wWS" id="h1o-0S-eEZ"/>
+                        <outlet property="nameLabel" destination="Kdl-mF-ndd" id="c7E-ax-gLl"/>
+                        <outlet property="nameTextField" destination="2lt-aj-EjG" id="zv1-RX-tWk"/>
+                        <outlet property="tableView" destination="Nlb-PT-TZR" id="ZfC-je-cso"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v8J-WH-34v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1567.175572519084" y="-1005.6338028169015"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="d6w-Uw-6CR">
+            <objects>
+                <tabBarController id="ZGl-GT-FvY" customClass="TabBarController" customModule="tabbar" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="w1j-3S-KjC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="YXr-2z-zOY" kind="relationship" relationship="viewControllers" id="9mH-JW-AXR"/>
+                        <segue destination="hAP-Wn-PLf" kind="relationship" relationship="viewControllers" id="Hmx-ye-KFc"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="88k-Sp-kha"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AeI-qB-M0j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1567" y="-304"/>
+        </scene>
+        <!--Tela03-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="Tela03ViewController" customModule="tabbar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tela03" image="trash.fill" catalog="system" id="9mY-qI-OVJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-705" y="-292"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="doc.fill" catalog="system" width="115" height="128"/>
+        <image name="paperplane.fill" catalog="system" width="128" height="119"/>
+        <image name="trash.fill" catalog="system" width="119" height="128"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

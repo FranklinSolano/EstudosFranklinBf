@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dzs-1i-ZyY">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Roleta-->
+        <scene sceneID="U9u-nX-3jp">
+            <objects>
+                <viewController id="X61-T9-CZg" customClass="Tela02VC" customModule="DesafioRoleta" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J9B-CH-WmN">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="UO5-w2-lCG"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Roleta" image="square.and.arrow.up" catalog="system" id="caI-N9-dl1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lsN-Zk-Qlg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="560" y="706"/>
+        </scene>
+        <!--Roleta-->
+        <scene sceneID="hgc-yV-SE1">
+            <objects>
+                <viewController id="elq-9S-FgZ" customClass="ViewController" customModule="DesafioRoleta" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NN6-bK-iYa">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0qH-k6-bew">
+                                <rect key="frame" x="76.666666666666686" y="119" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="MvR-yf-S7A"/>
+                                    <constraint firstAttribute="width" constant="240" id="cOu-w0-1cM"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Thh-Tg-VLJ">
+                                <rect key="frame" x="20" y="277" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQv-UY-Lwz">
+                                <rect key="frame" x="20" y="336" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="tappedSortearButton:" destination="elq-9S-FgZ" eventType="touchUpInside" id="4S8-el-Sh8"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ASx-2d-8md">
+                                <rect key="frame" x="0.0" y="401" width="393" height="368"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="m7I-M9-lsC"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="WQv-UY-Lwz" firstAttribute="leading" secondItem="m7I-M9-lsC" secondAttribute="leading" constant="20" id="1NO-Tt-9Da"/>
+                            <constraint firstItem="WQv-UY-Lwz" firstAttribute="top" secondItem="Thh-Tg-VLJ" secondAttribute="bottom" constant="25" id="5ih-dV-BrK"/>
+                            <constraint firstItem="Thh-Tg-VLJ" firstAttribute="top" secondItem="0qH-k6-bew" secondAttribute="bottom" constant="30" id="6mP-5B-FJG"/>
+                            <constraint firstItem="0qH-k6-bew" firstAttribute="centerX" secondItem="NN6-bK-iYa" secondAttribute="centerX" id="9zf-5k-Qqz"/>
+                            <constraint firstItem="m7I-M9-lsC" firstAttribute="bottom" secondItem="ASx-2d-8md" secondAttribute="bottom" id="LZY-2v-dUs"/>
+                            <constraint firstItem="ASx-2d-8md" firstAttribute="leading" secondItem="m7I-M9-lsC" secondAttribute="leading" id="QPN-79-wzE"/>
+                            <constraint firstItem="ASx-2d-8md" firstAttribute="top" secondItem="WQv-UY-Lwz" secondAttribute="bottom" constant="30" id="VIf-hU-B5j"/>
+                            <constraint firstItem="m7I-M9-lsC" firstAttribute="trailing" secondItem="Thh-Tg-VLJ" secondAttribute="trailing" constant="20" id="nYZ-sl-GXj"/>
+                            <constraint firstItem="0qH-k6-bew" firstAttribute="top" secondItem="m7I-M9-lsC" secondAttribute="top" constant="60" id="pqS-Ak-kP5"/>
+                            <constraint firstItem="Thh-Tg-VLJ" firstAttribute="leading" secondItem="m7I-M9-lsC" secondAttribute="leading" constant="20" id="wvg-JK-EBk"/>
+                            <constraint firstItem="m7I-M9-lsC" firstAttribute="trailing" secondItem="ASx-2d-8md" secondAttribute="trailing" id="y3I-AQ-yeS"/>
+                            <constraint firstItem="m7I-M9-lsC" firstAttribute="trailing" secondItem="WQv-UY-Lwz" secondAttribute="trailing" constant="20" id="yWs-Dm-NUB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Roleta" image="square.and.arrow.down.fill" catalog="system" id="OHJ-Us-7TR"/>
+                    <connections>
+                        <outlet property="imageCartao" destination="0qH-k6-bew" id="CRy-kA-QMD"/>
+                        <outlet property="sortearButton" destination="WQv-UY-Lwz" id="QtB-k5-TXW"/>
+                        <outlet property="tableview" destination="ASx-2d-8md" id="JNd-kh-dph"/>
+                        <outlet property="texteFieldName" destination="Thh-Tg-VLJ" id="iIX-Vh-m2d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a93-7Z-53P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1595" y="-277"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="bad-mb-Vxr">
+            <objects>
+                <tabBarController id="Dzs-1i-ZyY" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dHV-3K-Pin">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="elq-9S-FgZ" kind="relationship" relationship="viewControllers" id="lgJ-Xe-DkP"/>
+                        <segue destination="X61-T9-CZg" kind="relationship" relationship="viewControllers" id="iqZ-ra-b7W"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VpP-8Q-7tP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="422" y="-138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="square.and.arrow.down.fill" catalog="system" width="121" height="128"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
