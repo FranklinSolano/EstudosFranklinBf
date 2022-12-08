@@ -11,7 +11,7 @@
         <!--Roleta-->
         <scene sceneID="U9u-nX-3jp">
             <objects>
-                <viewController id="X61-T9-CZg" customClass="Tela02VC" customModule="DesafioRoleta" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="X61-T9-CZg" customClass="HistoryVC" customModule="DesafioRoleta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J9B-CH-WmN">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
