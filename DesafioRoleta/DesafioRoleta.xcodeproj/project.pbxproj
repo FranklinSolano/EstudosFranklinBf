@@ -16,7 +16,7 @@
 		EB004050294171C0004F51AD /* GenericService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00404F294171C0004F51AD /* GenericService.swift */; };
 		EB759EA72930380500F4D6C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB759EA62930380500F4D6C9 /* AppDelegate.swift */; };
 		EB759EA92930380500F4D6C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB759EA82930380500F4D6C9 /* SceneDelegate.swift */; };
-		EB759EAB2930380500F4D6C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB759EAA2930380500F4D6C9 /* ViewController.swift */; };
+		EB759EAB2930380500F4D6C9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB759EAA2930380500F4D6C9 /* HomeVC.swift */; };
 		EB759EAE2930380500F4D6C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB759EAC2930380500F4D6C9 /* Main.storyboard */; };
 		EB759EB02930380700F4D6C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB759EAF2930380700F4D6C9 /* Assets.xcassets */; };
 		EB759EB32930380700F4D6C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB759EB12930380700F4D6C9 /* LaunchScreen.storyboard */; };
@@ -26,6 +26,9 @@
 		EB759EC42936588C00F4D6C9 /* PersonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB759EC22936588C00F4D6C9 /* PersonTableViewCell.xib */; };
 		EB759EC729365BA300F4D6C9 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB759EC629365BA300F4D6C9 /* Person.swift */; };
 		EB759ECA293671EE00F4D6C9 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB759EC9293671EE00F4D6C9 /* Alert.swift */; };
+		EBBCB98C29493F0C000D264D /* CustonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBCB98A29493F0C000D264D /* CustonTableViewCell.swift */; };
+		EBBCB98D29493F0C000D264D /* CustonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBBCB98B29493F0C000D264D /* CustonTableViewCell.xib */; };
+		EBBCB992294B67A5000D264D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBCB991294B67A5000D264D /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +43,7 @@
 		EB759EA32930380500F4D6C9 /* DesafioRoleta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioRoleta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB759EA62930380500F4D6C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB759EA82930380500F4D6C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EB759EAA2930380500F4D6C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB759EAA2930380500F4D6C9 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		EB759EAD2930380500F4D6C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB759EAF2930380700F4D6C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB759EB22930380700F4D6C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +54,9 @@
 		EB759EC22936588C00F4D6C9 /* PersonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonTableViewCell.xib; sourceTree = "<group>"; };
 		EB759EC629365BA300F4D6C9 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		EB759EC9293671EE00F4D6C9 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		EBBCB98A29493F0C000D264D /* CustonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustonTableViewCell.swift; sourceTree = "<group>"; };
+		EBBCB98B29493F0C000D264D /* CustonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustonTableViewCell.xib; sourceTree = "<group>"; };
+		EBBCB991294B67A5000D264D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F35C28202F7C03ABA31480BA /* Pods_DesafioRoleta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioRoleta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -72,7 +78,6 @@
 				6CC59CC3E24C4E657518ED60 /* Pods-DesafioRoleta.debug.xcconfig */,
 				4ADCEDA47B5C2ECEEEED8819 /* Pods-DesafioRoleta.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -84,13 +89,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EB0040412941595C004F51AD /* historoy */ = {
+		EB0040412941595C004F51AD /* Historoy  */ = {
 			isa = PBXGroup;
 			children = (
+				EBBCB98829493E46000D264D /* VC */,
 				EB00404929416D1B004F51AD /* ViewModel */,
-				EB0040422941598E004F51AD /* HistoryVC.swift */,
 			);
-			path = historoy;
+			path = "Historoy ";
 			sourceTree = "<group>";
 		};
 		EB00404429415B37004F51AD /* Jason */ = {
@@ -139,15 +144,16 @@
 		EB759EA52930380500F4D6C9 /* DesafioRoleta */ = {
 			isa = PBXGroup;
 			children = (
+				EBBCB98E294B671E000D264D /* Home */,
+				EB0040412941595C004F51AD /* Historoy  */,
+				EBBCB98929493EDA000D264D /* Cel */,
 				EB00404C29416E3F004F51AD /* Service */,
 				EB00404429415B37004F51AD /* Jason */,
-				EB0040412941595C004F51AD /* historoy */,
 				EB759EC8293671DB00F4D6C9 /* Alert */,
 				EB759EC529365B9600F4D6C9 /* Model */,
 				EB759EBA29303BF500F4D6C9 /* Cell */,
 				EB759EA62930380500F4D6C9 /* AppDelegate.swift */,
 				EB759EA82930380500F4D6C9 /* SceneDelegate.swift */,
-				EB759EAA2930380500F4D6C9 /* ViewController.swift */,
 				EB759EAC2930380500F4D6C9 /* Main.storyboard */,
 				EB759EAF2930380700F4D6C9 /* Assets.xcassets */,
 				EB759EB12930380700F4D6C9 /* LaunchScreen.storyboard */,
@@ -198,6 +204,48 @@
 				EB759EC9293671EE00F4D6C9 /* Alert.swift */,
 			);
 			path = Alert;
+			sourceTree = "<group>";
+		};
+		EBBCB98829493E46000D264D /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				EB0040422941598E004F51AD /* HistoryVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		EBBCB98929493EDA000D264D /* Cel */ = {
+			isa = PBXGroup;
+			children = (
+				EBBCB98A29493F0C000D264D /* CustonTableViewCell.swift */,
+				EBBCB98B29493F0C000D264D /* CustonTableViewCell.xib */,
+			);
+			path = Cel;
+			sourceTree = "<group>";
+		};
+		EBBCB98E294B671E000D264D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EBBCB98F294B672A000D264D /* HomeVC */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EBBCB98F294B672A000D264D /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				EB759EAA2930380500F4D6C9 /* HomeVC.swift */,
+				EBBCB990294B6748000D264D /* ViewModel */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		EBBCB990294B6748000D264D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EBBCB991294B67A5000D264D /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBBCB98D29493F0C000D264D /* CustonTableViewCell.xib in Resources */,
 				EB759EB32930380700F4D6C9 /* LaunchScreen.storyboard in Resources */,
 				EB759EBE29303C1D00F4D6C9 /* EmptyTableViewCell.xib in Resources */,
 				EB759EB02930380700F4D6C9 /* Assets.xcassets in Resources */,
@@ -318,14 +367,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBBCB98C29493F0C000D264D /* CustonTableViewCell.swift in Sources */,
 				EB00404829415EDE004F51AD /* History.swift in Sources */,
 				EB759EC729365BA300F4D6C9 /* Person.swift in Sources */,
-				EB759EAB2930380500F4D6C9 /* ViewController.swift in Sources */,
+				EB759EAB2930380500F4D6C9 /* HomeVC.swift in Sources */,
 				EB759EBD29303C1D00F4D6C9 /* EmptyTableViewCell.swift in Sources */,
 				EB00404E29416F08004F51AD /* HistoryService.swift in Sources */,
 				EB004050294171C0004F51AD /* GenericService.swift in Sources */,
 				EB759EA72930380500F4D6C9 /* AppDelegate.swift in Sources */,
 				EB00404B29416D3B004F51AD /* HistoryViewModel.swift in Sources */,
+				EBBCB992294B67A5000D264D /* HomeViewModel.swift in Sources */,
 				EB759EC32936588C00F4D6C9 /* PersonTableViewCell.swift in Sources */,
 				EB759EA92930380500F4D6C9 /* SceneDelegate.swift in Sources */,
 				EB0040432941598E004F51AD /* HistoryVC.swift in Sources */,

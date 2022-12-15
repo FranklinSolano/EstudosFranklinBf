@@ -15,10 +15,25 @@
                     <view key="view" contentMode="scaleToFill" id="J9B-CH-WmN">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Hzv-nD-j6o">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="UO5-w2-lCG"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="UO5-w2-lCG" firstAttribute="bottom" secondItem="Hzv-nD-j6o" secondAttribute="bottom" id="YCm-Tk-TKD"/>
+                            <constraint firstItem="Hzv-nD-j6o" firstAttribute="top" secondItem="UO5-w2-lCG" secondAttribute="top" id="aiJ-vG-o2S"/>
+                            <constraint firstItem="UO5-w2-lCG" firstAttribute="trailing" secondItem="Hzv-nD-j6o" secondAttribute="trailing" id="hTn-nc-XZP"/>
+                            <constraint firstItem="Hzv-nD-j6o" firstAttribute="leading" secondItem="UO5-w2-lCG" secondAttribute="leading" id="vNG-yo-kUf"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Roleta" image="square.and.arrow.up" catalog="system" id="caI-N9-dl1"/>
+                    <connections>
+                        <outlet property="tableView" destination="Hzv-nD-j6o" id="6EI-V7-0Io"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lsN-Zk-Qlg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -27,7 +42,7 @@
         <!--Roleta-->
         <scene sceneID="hgc-yV-SE1">
             <objects>
-                <viewController id="elq-9S-FgZ" customClass="ViewController" customModule="DesafioRoleta" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="elq-9S-FgZ" customClass="HomeVC" customModule="DesafioRoleta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NN6-bK-iYa">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

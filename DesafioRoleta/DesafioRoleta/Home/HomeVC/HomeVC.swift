@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeVC: UIViewController {
     
     
     @IBOutlet weak var imageCartao: UIImageView!
@@ -19,10 +19,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableview: UITableView!
     
-    var listPerson: [Person] = []
-    var listImage: [String] = ["Image","Image-1","Image-2","Image-3","Image-4","Image-5",]
+    var viewModel: HomeViewModel = HomeViewModel()
     var alert: Alert?
-    var person: Person?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +35,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func tappedSortearButton(_ sender: UIButton) {
-        self.person = listPerson.randomElement()
+        viewModel.SortearButton()
     }
     
     func configElements(){
@@ -61,7 +60,7 @@ class ViewController: UIViewController {
     
     func blockedDrawNumberButton(){
 
-        if listPerson.isEmpty {
+        if viewModel.isListPersonEmpty {
             sortearButton.isEnabled = false
             sortearButton.alpha = 0.5
         } else {
@@ -70,52 +69,43 @@ class ViewController: UIViewController {
         }
     }
 }
-// ddddd
 
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+
+extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if listPerson.count == 0 {
-            return 1
-        } else{
-            return listPerson.count
-        }
-        
+        return viewModel.numberOfRowsInSection
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if listPerson.count == 0 {
+        if viewModel.isListPersonEmpty {
             let cell = tableView.dequeueReusableCell(withIdentifier: EmptyTableViewCell.identifier,for: indexPath) as? EmptyTableViewCell
             return cell ?? UITableViewCell()
         } else {
             
             let cell = tableView.dequeueReusableCell(withIdentifier: PersonTableViewCell.identifier) as? PersonTableViewCell
-            cell?.setupCell(data: listPerson[indexPath.row])
+            cell?.setupCell(data:viewModel.loadCurrentPerson(indexPath: indexPath) )
             
             return cell ?? UITableViewCell()
         }
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if listPerson.count == 0 {
-            return 220
-        }else {
-            return 90
-        }
+        return viewModel.heightForRowAt
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        listPerson.remove(at: indexPath.row)
+        viewModel.removePerson(indexPath: indexPath)
         tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        if self.listPerson[indexPath.row] === self .person{
+        if  viewModel.checkPersonPayer(indexPath: indexPath) {
             alert?.alertInformation(title: "Muito bom", message: "Agora é sua vez, pague a conta")
-            listPerson.removeAll()
+            viewModel.removeAll()
             
         } else {
-            listPerson.remove(at: indexPath.row)
+            viewModel.removePerson(indexPath: indexPath)
             
         }
         blockedDrawNumberButton()
@@ -124,13 +114,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     
 }
-extension ViewController: UITextFieldDelegate{
+extension HomeVC: UITextFieldDelegate{
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         if !(textField.text?.isEmpty ?? false){
-            listPerson.append(Person(name: texteFieldName.text ?? "", image: listImage.randomElement() ?? "" ))
+            viewModel.addPerson(name: textField.text ?? "")
             tableview.reloadData()
+            blockedDrawNumberButton()
         }
         texteFieldName.text = ""
         return true
